@@ -1,0 +1,13 @@
+Navigation failed: page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.epex-spot.de/?delivery_date=2026-01-30
+Call log:
+  - navigating to "https://www.epex-spot.de/?delivery_date=2026-01-30", waiting until "networkidle"
+
+DNS resolution failed. This typically means:
+1. No internet connection
+2. DNS server is unreachable
+3. The domain name is incorrect
+
+Please verify:
+- Internet connectivity
+- Domain: www.epex-spot.de
+Test failed: Cannot reach website at https://www.epex-spot.de/?delivery_date=2026-01-30. Please check your internet connection and domain name.

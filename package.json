@@ -1,0 +1,23 @@
+{
+  "name": "epex-spot-scraper",
+  "version": "1.0.0",
+  "description": "Playwright test to scrape EPEX SPOT market data and export to CSV",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:allure": "playwright test",
+    "allure:generate": "allure generate ./allure-results --clean -o ./allure-report",
+    "allure:open": "allure open ./allure-report"
+  },
+  "keywords": ["playwright", "scraping", "epex", "csv"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.11.0",
+    "csv-writer": "^1.6.0"
+  }
+}
