@@ -1,0 +1,22 @@
+Starting mock server with sample EPEX SPOT data...
+✓ Mock server started at http://localhost:8765
+Navigating to: http://localhost:8765
+Scraping market data from table...
+✓ Successfully scraped 6 rows of data
+
+First few rows of scraped data:
+Row 1: { Low: '45.23', High: '48.75', Last: '47.50', 'Weight Avg': '46.82' }
+Row 2: { Low: '44.50', High: '47.80', Last: '46.25', 'Weight Avg': '45.95' }
+Row 3: { Low: '43.75', High: '46.90', Last: '45.80', 'Weight Avg': '45.30' }
+
+Writing data to CSV file...
+✓ CSV file created successfully at: C:\Users\User\Desktop\Brady Assignment\output\market_data.csv
+✓ CSV file verified - Size: 169 bytes
+✓ CSV file contains 6 data rows plus 1 header row
+
+CSV Content Preview:
+Low,High,Last,Weight Avg
+45.23,48.75,47.50,46.82
+44.50,47.80,46.25,45.95
+43.75,46.90,45.80,45.30
+✓ Mock server stopped
