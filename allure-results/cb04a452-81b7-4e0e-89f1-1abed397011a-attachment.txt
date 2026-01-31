@@ -1,0 +1,5 @@
+Attempt 1 failed: No table rows found with any selector
+Attempt 2 failed: No table rows found with any selector
+Attempt 3 failed: No table rows found with any selector
+   ⚠ Could not scrape live website
+❌ TEST FAILED: Test is skipped: 

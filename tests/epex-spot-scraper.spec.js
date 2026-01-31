@@ -227,7 +227,7 @@ test('Scrape EPEX SPOT market data and export to CSV', async ({ page }) => {
     // STEP 1: Navigate to website
     console.log('📍 STEP 1: Navigate to website');
     const url = buildUrl();
-    console.log(`   URL: ${url}`);
+    console.log(`\n   FULL URL: ${url}\n`);
     
     try {
       const response = await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
