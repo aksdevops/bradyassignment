@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","4154","Scrape EPEX SPOT market data and export to CSV","chromium","2026-01-31","failed","2026-01-31","","epex-spot-scraper.spec.js","",""
-"","815","Scrape market data from mock server and export to CSV","chromium","2026-01-31","passed","2026-01-31","","epex-spot-scraper-mock.spec.js","",""
+"","13137","Scrape EPEX SPOT market data and export to CSV","chromium","2026-02-01","passed","2026-02-01","","epex-spot-scraper.spec.js","",""
+"","773","Scrape market data from mock server and export to CSV","chromium","2026-02-01","passed","2026-02-01","","epex-spot-scraper-mock.spec.js","",""

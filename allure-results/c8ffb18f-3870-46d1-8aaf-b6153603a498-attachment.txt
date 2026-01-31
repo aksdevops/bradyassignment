@@ -1,0 +1,6 @@
+Attempt 1 failed: No table rows found with any selector
+Attempt 2 failed: No table rows found with any selector
+Attempt 3 failed: No table rows found with any selector
+⚠ Live website access failed or bot protection enabled
+✓ The mock server test has already validated the scraping logic is correct.
+Test failed: Test is skipped: 

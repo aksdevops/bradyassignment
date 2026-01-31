@@ -1,0 +1,441 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - heading " Part of EEX Group  Order Market Data  Order E-Learning  Downloads  Newsroom Epex Epex" [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link " Part of EEX Group" [ref=e6] [cursor=pointer]:
+            - /url: http://www.eex-group.com/eexg/
+          - list [ref=e7]:
+            - listitem [ref=e8]:
+              - link " Order Market Data" [ref=e9] [cursor=pointer]:
+                - /url: https://webshop.eex-group.com/
+            - listitem [ref=e10]:
+              - link " Order E-Learning" [ref=e11] [cursor=pointer]:
+                - /url: https://webshop.eex-group.com/epex-spot-e-learning
+            - listitem [ref=e12]:
+              - link " Downloads" [ref=e13] [cursor=pointer]:
+                - /url: /en/downloads
+            - listitem [ref=e14]:
+              - link " Newsroom" [ref=e15] [cursor=pointer]:
+                - /url: /en/newsroom
+      - generic [ref=e16]:
+        - generic:
+          - generic:
+            - link "Epex Epex" [ref=e17] [cursor=pointer]:
+              - /url: https://www.epexspot.com/en
+              - img "Epex" [ref=e18]
+              - generic [ref=e19]: Epex
+            - text: 📞 👤
+          - navigation:
+            - list [ref=e20]:
+              - listitem [ref=e21]:
+                - link "Market data" [ref=e22] [cursor=pointer]:
+                  - /url: ""
+              - listitem [ref=e23]:
+                - link "Market Access" [ref=e24] [cursor=pointer]:
+                  - /url: ""
+              - listitem [ref=e25]:
+                - link "Trading & Services" [ref=e26] [cursor=pointer]:
+                  - /url: ""
+              - listitem [ref=e27]:
+                - link "Markets & Regulation" [ref=e28] [cursor=pointer]:
+                  - /url: ""
+              - listitem [ref=e29]:
+                - link "Corporate" [ref=e30] [cursor=pointer]:
+                  - /url: ""
+            - list [ref=e31]:
+              - listitem [ref=e32]:
+                - link "👤 Log in":
+                  - /url: /en/user/login
+            - text:    
+    - main [ref=e33]:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - link " Filters" [ref=e39] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e40]: 
+            - text: Filters
+          - heading "Market Results" [level=1] [ref=e41]
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - generic [ref=e45]: Select your filters
+              - button "Reset filters" [ref=e46] [cursor=pointer]
+            - generic [ref=e47]:
+              - generic [ref=e48]: Trading Modality
+              - generic [ref=e49]:
+                - generic [ref=e50]:
+                  - radio "Auction" [checked] [ref=e51]
+                  - generic [ref=e52] [cursor=pointer]: Auction
+                - generic [ref=e53]:
+                  - radio "Continuous" [ref=e54]
+                  - generic [ref=e55] [cursor=pointer]: Continuous
+                - generic [ref=e56]:
+                  - radio "Capacity Auction" [ref=e57]
+                  - generic [ref=e58] [cursor=pointer]: Capacity Auction
+                - generic [ref=e59]:
+                  - radio "Guarantees of Origin" [ref=e60]
+                  - generic [ref=e61] [cursor=pointer]: Guarantees of Origin
+              - generic [ref=e62]: Market Segment
+              - generic [ref=e63]:
+                - generic [ref=e64]:
+                  - radio "Day-Ahead" [checked] [ref=e65]
+                  - generic [ref=e66] [cursor=pointer]: Day-Ahead
+                - generic [ref=e67]:
+                  - radio "Intraday" [ref=e68]
+                  - generic [ref=e69] [cursor=pointer]: Intraday
+              - generic [ref=e70]: Auction Name
+              - generic [ref=e71]:
+                - generic [ref=e72]:
+                  - radio "SDAC" [checked] [ref=e73]
+                  - generic [ref=e74] [cursor=pointer]: SDAC
+                - generic [ref=e75]:
+                  - radio "GB DAA 1 (60')" [ref=e76]
+                  - generic [ref=e77] [cursor=pointer]: GB DAA 1 (60')
+                - generic [ref=e78]:
+                  - radio "CH" [ref=e79]
+                  - generic [ref=e80] [cursor=pointer]: CH
+                - generic [ref=e81]:
+                  - radio "GB DAA 2 (30')" [ref=e82]
+                  - generic [ref=e83] [cursor=pointer]: GB DAA 2 (30')
+              - generic [ref=e85]:
+                - generic [ref=e86]: Delivery Date
+                - generic [ref=e87]:
+                  - textbox [ref=e88]: 01 Feb. 2026
+                  - text: 
+              - generic [ref=e89]: Product
+              - generic [ref=e90]:
+                - generic [ref=e91]:
+                  - radio "15 min" [checked] [ref=e92]
+                  - generic [ref=e93] [cursor=pointer]: 15 min
+                - generic [ref=e94]:
+                  - radio "60 min index" [ref=e95]
+                  - generic [ref=e96] [cursor=pointer]: 60 min index
+              - generic [ref=e97]: View
+              - generic [ref=e98]:
+                - generic [ref=e99]:
+                  - radio "Map" [ref=e100]
+                  - generic [ref=e101] [cursor=pointer]: Map
+                - generic [ref=e102]:
+                  - radio "Table" [checked] [ref=e103]
+                  - generic [ref=e104] [cursor=pointer]: Table
+                - generic [ref=e105]:
+                  - radio "Graph" [ref=e106]
+                  - generic [ref=e107] [cursor=pointer]: Graph
+                - generic [ref=e108]:
+                  - radio "Aggregated Curves" [ref=e109]
+                  - generic [ref=e110] [cursor=pointer]: Aggregated Curves
+              - generic [ref=e111]: Market Area
+              - generic [ref=e112]:
+                - generic [ref=e113]:
+                  - radio "AT" [checked] [ref=e114]
+                  - generic [ref=e115] [cursor=pointer]: AT
+                - generic [ref=e116]:
+                  - radio "BE" [ref=e117]
+                  - generic [ref=e118] [cursor=pointer]: BE
+                - generic [ref=e119]:
+                  - radio "DE-LU" [ref=e120]
+                  - generic [ref=e121] [cursor=pointer]: DE-LU
+                - generic [ref=e122]:
+                  - radio "DK1" [ref=e123]
+                  - generic [ref=e124] [cursor=pointer]: DK1
+                - generic [ref=e125]:
+                  - radio "DK2" [ref=e126]
+                  - generic [ref=e127] [cursor=pointer]: DK2
+                - generic [ref=e128]:
+                  - radio "FI" [ref=e129]
+                  - generic [ref=e130] [cursor=pointer]: FI
+                - generic [ref=e131]:
+                  - radio "FR" [ref=e132]
+                  - generic [ref=e133] [cursor=pointer]: FR
+                - generic [ref=e134]:
+                  - radio "NL" [ref=e135]
+                  - generic [ref=e136] [cursor=pointer]: NL
+                - generic [ref=e137]:
+                  - radio "NO1" [ref=e138]
+                  - generic [ref=e139] [cursor=pointer]: NO1
+                - generic [ref=e140]:
+                  - radio "NO2" [ref=e141]
+                  - generic [ref=e142] [cursor=pointer]: NO2
+                - generic [ref=e143]:
+                  - radio "NO3" [ref=e144]
+                  - generic [ref=e145] [cursor=pointer]: NO3
+                - generic [ref=e146]:
+                  - radio "NO4" [ref=e147]
+                  - generic [ref=e148] [cursor=pointer]: NO4
+                - generic [ref=e149]:
+                  - radio "NO5" [ref=e150]
+                  - generic [ref=e151] [cursor=pointer]: NO5
+                - generic [ref=e152]:
+                  - radio "PL" [ref=e153]
+                  - generic [ref=e154] [cursor=pointer]: PL
+                - generic [ref=e155]:
+                  - radio "SE1" [ref=e156]
+                  - generic [ref=e157] [cursor=pointer]: SE1
+                - generic [ref=e158]:
+                  - radio "SE2" [ref=e159]
+                  - generic [ref=e160] [cursor=pointer]: SE2
+                - generic [ref=e161]:
+                  - radio "SE3" [ref=e162]
+                  - generic [ref=e163] [cursor=pointer]: SE3
+                - generic [ref=e164]:
+                  - radio "SE4" [ref=e165]
+                  - generic [ref=e166] [cursor=pointer]: SE4
+              - link " Access Data in Webshop" [ref=e168] [cursor=pointer]:
+                - /url: https://webshop.eex-group.com/
+        - generic [ref=e171]:
+          - generic [ref=e172]: ⚠
+          - text: No data for this combination
+      - text: 
+    - contentinfo [ref=e173]:
+      - generic [ref=e174]:
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - link "Epex Epex" [ref=e177] [cursor=pointer]:
+              - /url: https://www.epexspot.com/en
+              - img "Epex" [ref=e178]
+              - generic [ref=e179]: Epex
+            - generic [ref=e180]:
+              - generic [ref=e181]: 5 Boulevard Montmartre 75002 Paris
+              - text: 📞� +33 (0)1 73 03 96 00
+              - link "✉ info@epexspot.com" [ref=e182] [cursor=pointer]:
+                - /url: mailto:info@epexspot.com
+          - list [ref=e184]:
+            - listitem [ref=e185]:
+              - link "Market data":
+                - /url: ""
+              - list [ref=e186]:
+                - listitem [ref=e187]:
+                  - link "Market Results" [ref=e188] [cursor=pointer]:
+                    - /url: /en/market-results
+                - listitem [ref=e189]:
+                  - link "Indices" [ref=e190] [cursor=pointer]:
+                    - /url: /en/indices
+                - listitem [ref=e191]:
+                  - link "Market Data Services" [ref=e192] [cursor=pointer]:
+                    - /url: /en/marketdataservices
+                - listitem [ref=e193]:
+                  - link "Dynamic Pricing Licence for Electricity Retailers" [ref=e194] [cursor=pointer]:
+                    - /url: /en/dynamic-pricing-license-electricity-retailers
+                - listitem [ref=e195]:
+                  - link "Get in touch" [ref=e196] [cursor=pointer]:
+                    - /url: https://www.epexspot.com/en/marketdataservices#get-in-touch
+                - listitem [ref=e197]:
+                  - link "Order Market Data" [ref=e198] [cursor=pointer]:
+                    - /url: http://webshop.eex-group.com
+                - listitem [ref=e199]:
+                  - link "General Conditions of Data Use" [ref=e200] [cursor=pointer]:
+                    - /url: /en/GCDataUse
+                - listitem [ref=e201]:
+                  - link "List of Data Vendors with Real-Time Offers" [ref=e202] [cursor=pointer]:
+                    - /url: /en/datavendors
+                - listitem [ref=e203]:
+                  - link "EEX Transparency Data Services" [ref=e204] [cursor=pointer]:
+                    - /url: https://webshop.eex-group.com/data-type/eex-transparency-data-power-api-rt
+            - listitem [ref=e205]:
+              - link "Market Access":
+                - /url: ""
+              - list [ref=e206]:
+                - listitem [ref=e207]:
+                  - link "Membership types" [ref=e208] [cursor=pointer]:
+                    - /url: /en/membership-types
+                - listitem [ref=e209]:
+                  - link "Become a member" [ref=e210] [cursor=pointer]:
+                    - /url: /en/becomeamember
+                - listitem [ref=e211]:
+                  - link "Market access services" [ref=e212] [cursor=pointer]:
+                    - /url: /en/market-access-services
+                - listitem [ref=e213]:
+                  - link "Exchange members" [ref=e214] [cursor=pointer]:
+                    - /url: /en/exchangemembers
+                - listitem [ref=e215]:
+                  - link "Software providers" [ref=e216] [cursor=pointer]:
+                    - /url: /en/software-providers
+            - listitem [ref=e217]:
+              - link "Trading & Services":
+                - /url: ""
+              - list [ref=e218]:
+                - listitem [ref=e219]:
+                  - link "Trading Products" [ref=e220] [cursor=pointer]:
+                    - /url: /en/tradingproducts
+                - listitem [ref=e221]:
+                  - link "Technology" [ref=e222] [cursor=pointer]:
+                    - /url: /en/technology
+                - listitem [ref=e223]:
+                  - link "Fees" [ref=e224] [cursor=pointer]:
+                    - /url: /en/fees
+                - listitem [ref=e225]:
+                  - link "E-Learning and Trading Handbook" [ref=e226] [cursor=pointer]:
+                    - /url: /en/elearning
+                - listitem [ref=e227]:
+                  - link "Market solutions for System Operators" [ref=e228] [cursor=pointer]:
+                    - /url: /en/market-solutions-system-operators
+                - listitem [ref=e229]:
+                  - link "Services to other Power Exchanges" [ref=e230] [cursor=pointer]:
+                    - /url: /en/servicespx
+                - listitem [ref=e231]:
+                  - link "EPEX SPOT Consulting" [ref=e232] [cursor=pointer]:
+                    - /url: /en/consulting
+                - listitem [ref=e233]:
+                  - link "Reporting of inside information (REMIT & MAR)" [ref=e234] [cursor=pointer]:
+                    - /url: https://remit-reporting.com/en/
+            - listitem [ref=e235]:
+              - link "Market Regulation":
+                - /url: ""
+              - list [ref=e236]:
+                - listitem [ref=e237]:
+                  - link "Basics of the Power Market" [ref=e238] [cursor=pointer]:
+                    - /url: /en/basicspowermarket
+                - listitem [ref=e239]:
+                  - link "European Market Coupling" [ref=e240] [cursor=pointer]:
+                    - /url: /en/marketcoupling
+                - listitem [ref=e241]:
+                  - link "15-minute products in Market Coupling" [ref=e242] [cursor=pointer]:
+                    - /url: /en/15-minute-products-market-coupling
+                - listitem [ref=e243]:
+                  - link "Regulation" [ref=e244] [cursor=pointer]:
+                    - /url: /en/regulation
+                - listitem [ref=e245]:
+                  - link "Focus GB" [ref=e246] [cursor=pointer]:
+                    - /url: /en/focus-gb
+                - listitem [ref=e247]:
+                  - link "Market Surveillance" [ref=e248] [cursor=pointer]:
+                    - /url: /en/marketsurveillance
+                - listitem [ref=e249]:
+                  - link "Glossary" [ref=e250] [cursor=pointer]:
+                    - /url: /en/glossary
+            - listitem [ref=e251]:
+              - link "Corporate":
+                - /url: ""
+              - list [ref=e252]:
+                - listitem [ref=e253]:
+                  - link "About EPEX SPOT" [ref=e254] [cursor=pointer]:
+                    - /url: /en/about
+                - listitem [ref=e255]:
+                  - link "Governance" [ref=e256] [cursor=pointer]:
+                    - /url: /en/governance
+                - listitem [ref=e257]:
+                  - link "Newsroom" [ref=e258] [cursor=pointer]:
+                    - /url: /en/newsroom
+                - listitem [ref=e259]:
+                  - link "Career" [ref=e260] [cursor=pointer]:
+                    - /url: /en/joinepex
+                - listitem [ref=e261]:
+                  - link "Support" [ref=e262] [cursor=pointer]:
+                    - /url: /en/support
+                - listitem [ref=e263]:
+                  - link "Contact" [ref=e264] [cursor=pointer]:
+                    - /url: /en/contact
+        - generic [ref=e265]:
+          - list [ref=e266]:
+            - listitem [ref=e267]:
+              - link " Webshop" [ref=e268] [cursor=pointer]:
+                - /url: https://webshop.eex-group.com
+            - listitem [ref=e269]:
+              - link " Login E-learning" [ref=e270] [cursor=pointer]:
+                - /url: https://www.elearning.epexspot.com/MosSrv/
+            - listitem [ref=e271]:
+              - link " Downloads" [ref=e272] [cursor=pointer]:
+                - /url: /en/downloads
+            - listitem [ref=e273]:
+              - link " Newsroom" [ref=e274] [cursor=pointer]:
+                - /url: /en/newsroom
+          - list [ref=e275]:
+            - listitem [ref=e276]:
+              - link " Follow us on LinkedIn" [ref=e277] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/epex-spot/?originalSubdomain=fr
+                - generic [ref=e278]: 
+                - text: Follow us on LinkedIn
+            - listitem [ref=e279]:
+              - link " Follow us on Twitter" [ref=e280] [cursor=pointer]:
+                - /url: https://twitter.com/epexspot_se
+                - generic [ref=e281]: 
+                - text: Follow us on Twitter
+        - generic [ref=e282]:
+          - generic [ref=e283]:
+            - text: Part of
+            - link "eexgroup" [ref=e284] [cursor=pointer]:
+              - /url: http://www.eex-group.com/eexg/
+              - img "eexgroup" [ref=e285]
+            - generic [ref=e286]: eex
+          - generic [ref=e287]:
+            - text: Related website
+            - link " webshop.eex-group.com" [ref=e288] [cursor=pointer]:
+              - /url: https://webshop.eex-group.com
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - generic [ref=e291]: ©2026 EPEX SPOT. All rights reserved
+            - list [ref=e292]:
+              - listitem [ref=e293]:
+                - link "Terms of Use of the Website" [ref=e294] [cursor=pointer]:
+                  - /url: /en/UseofWebsite
+              - listitem [ref=e295]:
+                - link "Privacy Policy" [ref=e296] [cursor=pointer]:
+                  - /url: /en/Privacy
+              - listitem [ref=e297]:
+                - link "General Conditions EPEX SPOT Market Data" [ref=e298] [cursor=pointer]:
+                  - /url: https://www.epexspot.com/sites/default/files/download_center_files/20251101_EPEX%20SPOT%20GENERAL%20CONDITIONS_Market%20Data%20%28mark-up%20version%29.pdf
+              - listitem [ref=e299]:
+                - link "General Conditions EPEX SPOT E-Learning" [ref=e300] [cursor=pointer]:
+                  - /url: /en/GCElearning
+          - generic [ref=e301]:
+            - text: Made by
+            - link "Kernix " [ref=e302] [cursor=pointer]:
+              - /url: https://www.kernix.com/
+              - text: Kernix
+              - generic [ref=e303]: 
+  - alertdialog "Cookie compliance banner" [ref=e305]:
+    - button "Privacy settings" [ref=e306] [cursor=pointer]
+    - alertdialog " We use cookies and similar technologies to enable services and functionality on our site and to understand your interaction with our service.  More Info " [ref=e307]:
+      - generic [ref=e309]:
+        - generic [ref=e310]:
+          - generic [ref=e311]:
+            - heading " We use cookies and similar technologies to enable services and functionality on our site and to understand your interaction with our service." [level=2] [ref=e312]
+            - heading " More Info " [level=2] [ref=e313]:
+              - text: 
+              - link "More Info " [ref=e314] [cursor=pointer]:
+                - /url: //www.epexspot.com/en/cookies-policy
+                - text: More Info
+                - heading "" [level=2]
+            - link:
+              - /url: //www.epexspot.com/en/cookies-policy
+          - generic [ref=e315]:
+            - generic [ref=e318]:
+              - checkbox " Analytics Cookies" [ref=e319]
+              - generic [ref=e320] [cursor=pointer]:
+                - generic [ref=e321]: 
+                - text: Analytics Cookies
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - checkbox " Essential Cookies" [checked] [ref=e325]
+                - generic [ref=e326] [cursor=pointer]:
+                  - generic [ref=e327]: 
+                  - text: Essential Cookies
+              - generic [ref=e328]: Cannot be disabled
+        - generic [ref=e330]:
+          - button "Allow all cookies" [ref=e332] [cursor=pointer]
+          - button "Allow selection" [ref=e334] [cursor=pointer]
+          - button "Withdraw consent" [ref=e336] [cursor=pointer]
+  - iframe [ref=e339]:
+    - generic [ref=f1e2]:
+      - generic [ref=f1e5]:
+        - link "Privacy" [ref=f1e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f1e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9]:
+          - text: protected by
+          - strong [ref=f1e10]: reCAPTCHA
+        - generic [ref=f1e12]:
+          - text: This site is exceeding
+          - link "reCAPTCHA Enterprise free quota" [ref=f1e13] [cursor=pointer]:
+            - /url: https://cloud.google.com/recaptcha/docs/billing-information
+          - text: .
+        - generic [ref=f1e14]: "-"
+```

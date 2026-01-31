@@ -1,0 +1,6 @@
+Attempt 1 failed: page.waitForSelector: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('table tbody tr') to be visible
+    27 × locator resolved to 4 elements. Proceeding with the first one: <tr>…</tr>
+
+Test failed: page.waitForTimeout: Target page, context or browser has been closed

@@ -1,0 +1,12 @@
+Navigating to: https://www.epexspot.com/en/market-results?market_area=GB&delivery_date=2026-01-30&data_mode=table
+Scraping market data...
+✓ Successfully scraped 4 rows of data
+
+First few rows of scraped data:
+Row 1: { Low: '3', High: '4', Last: '5', 'Weight Avg': '6' }
+Row 2: { Low: '10', High: '11', Last: '12', 'Weight Avg': '13' }
+Row 3: { Low: '17', High: '18', Last: '19', 'Weight Avg': '20' }
+
+Writing data to CSV file...
+✓ CSV file created successfully at: C:\Users\User\Desktop\Brady Assignment\output\market_data.csv
+✓ CSV file verified - Size: 69 bytes

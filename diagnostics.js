@@ -1,47 +1,59 @@
-/**
- * Network Diagnostic Script
- * Run this to diagnose network connectivity issues
- */
+import { chromium } from '@playwright/test';
 
-import https from 'https';
-
-function testDomain(domain) {
-  return new Promise((resolve) => {
-    console.log(`\nTesting: ${domain}`);
-    
-    const request = https.get(domain, { timeout: 5000 }, (response) => {
-      console.log(`✓ Connected successfully (Status: ${response.statusCode})`);
-      resolve(true);
-    });
-
-    request.on('error', (error) => {
-      console.log(`✗ Connection failed: ${error.code || error.message}`);
-      resolve(false);
-    });
-
-    request.on('timeout', () => {
-      console.log('✗ Connection timeout');
-      resolve(false);
-    });
-  });
-}
-
-async function runDiagnostics() {
-  console.log('=== Network Diagnostics ===\n');
+async function diagnoseWebsite() {
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
   
-  const domains = [
-    'https://www.epex-spot.de/',
-    'https://www.google.com/',
-    'https://www.github.com/'
-  ];
-
-  for (const domain of domains) {
-    await testDomain(domain);
-  }
-
-  console.log('\n=== Results ===');
-  console.log('If epex-spot.de failed but others worked, the issue is with that specific domain.');
-  console.log('If all failed, check your internet connection.');
+  // Get yesterday's date
+  const today = new Date();
+  const yesterday = new Date(today);
+  yesterday.setDate(yesterday.getDate() - 1);
+  const deliveryDate = yesterday.toISOString().split('T')[0];
+  
+  const url = `https://www.epexspot.com/en/market-results?market_area=GB&delivery_date=${deliveryDate}&data_mode=table`;
+  
+  console.log('Navigating to:', url);
+  await page.goto(url, { waitUntil: 'networkidle' });
+  
+  // Take a screenshot
+  await page.screenshot({ path: 'diagnostics-screenshot.png' });
+  console.log('Screenshot saved to diagnostics-screenshot.png');
+  
+  // Get page content
+  const content = await page.content();
+  console.log('\n=== Page HTML (first 5000 chars) ===');
+  console.log(content.substring(0, 5000));
+  
+  // Find all tables
+  const tables = await page.$$('table');
+  console.log(`\n=== Found ${tables.length} tables ===`);
+  
+  // Find all rows
+  const rows = await page.$$('tr');
+  console.log(`\n=== Found ${rows.length} tr elements ===`);
+  
+  // Look for any divs with role=row
+  const roleRows = await page.$$('[role="row"]');
+  console.log(`\n=== Found ${roleRows.length} elements with role="row" ===`);
+  
+  // Get all td elements
+  const cells = await page.$$('td');
+  console.log(`\n=== Found ${cells.length} td elements ===`);
+  
+  // Look for text containing "Low", "High", "Last", "Weight"
+  const bodyText = await page.locator('body').textContent();
+  console.log(`\n=== Checking for expected column headers ===`);
+  console.log('Contains "Low":', bodyText.includes('Low'));
+  console.log('Contains "High":', bodyText.includes('High'));
+  console.log('Contains "Last":', bodyText.includes('Last'));
+  console.log('Contains "Weight":', bodyText.includes('Weight'));
+  
+  // Print first 500 chars of body to see structure
+  console.log('\n=== Body text (first 1000 chars) ===');
+  console.log(bodyText.substring(0, 1000));
+  
+  await browser.close();
 }
 
-runDiagnostics().catch(console.error);
+diagnoseWebsite().catch(console.error);
+

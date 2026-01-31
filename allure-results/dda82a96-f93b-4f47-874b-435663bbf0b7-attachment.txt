@@ -1,0 +1,4 @@
+Attempt 1 failed: Too many arguments. If you need to pass more than 1 argument to the function wrap them in an object.
+Attempt 2 failed: Too many arguments. If you need to pass more than 1 argument to the function wrap them in an object.
+Attempt 3 failed: Too many arguments. If you need to pass more than 1 argument to the function wrap them in an object.
+Test failed: Failed to scrape data after 3 attempts: Too many arguments. If you need to pass more than 1 argument to the function wrap them in an object.
